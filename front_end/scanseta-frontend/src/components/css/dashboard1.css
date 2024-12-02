@@ -1,0 +1,104 @@
+/* src/components/css/dashboard1.css */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #32B8CA 0%, #94DAE3 10%, #D6F1F4 28%, #FFFFFF 100%);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    top: 23px;
+    left: 30.5px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 250px; /* Increase the width to make the logo larger */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Adjust spacing between logo and text */
+}
+
+.dashboard h1 {
+    font-size: 4vw; /* Responsive font size */
+    color: #0277bd;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 0vh;
+}
+
+/* src/components/css/dashboard1.css */
+.buttons button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    font-size: 1.5vw; /* Responsive font size */
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #32B8CA;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 350px; /* Fixed width for buttons */
+    height: 250px; /* Fixed height for buttons */
+    box-shadow: 8px 8px 25px 1px rgba(0, 0, 0, 0.3); /* Box shadow */
+}
+
+.button-image {
+    width: 100px; /* Adjust image size as needed */
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.buttons h2 {
+    font-size: 2vw; /* Responsive font size */
+    margin: 5px 0;
+}
+
+.buttons p {
+    font-size: 1vw; /* Responsive font size */
+    margin: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .dashboard h1 {
+        font-size: 6vw; /* Increase font size for smaller screens */
+    }
+
+    .buttons button {
+        padding: 3vw;
+        font-size: 4vw; /* Increase font size for buttons */
+        width: 150px; /* Adjust width for smaller screens */
+        height: 200px; /* Adjust height for smaller screens */
+    }
+
+    .button-image {
+        width: 80px; /* Adjust image size for smaller screens */
+        height: 80px;
+    }
+
+    .buttons h2 {
+        font-size: 4vw; /* Increase font size for title */
+    }
+
+    .buttons p {
+        font-size: 3vw; /* Increase font size for subtitle */
+    }
+}

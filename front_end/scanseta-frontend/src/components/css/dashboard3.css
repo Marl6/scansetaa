@@ -1,0 +1,75 @@
+/* src/css/dashboard3.css */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.search-container {
+    width: 70%; /* Allow full width */
+    margin-bottom: 30px;
+    display: flex; /* Retain flex to center child elements */
+    justify-content: center; /* Center children */
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    position: relative; /* Positioning for the icon */
+    width: 80%; /* Make the wrapper wider to accommodate the button */
+}
+
+.search-bar {
+    width: 100%; /* Use full width of the wrapper */
+    height: 70px; /* Adjust height as needed */
+    border-radius: 25px; /* More rounded corners for a modern look */
+    padding: 0 40px; /* Adjusted padding for uniformity */
+    font-size: 25px;
+    color:#32B8CA; /* Smaller font size for a cleaner appearance */
+    background-color: #fff; /* White background for minimalism */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ffffff; /* Subtle border */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Change border color on focus */
+.search-bar:focus {
+    border-color: #ffffff; /* Change border color on focus */
+    box-shadow: 5px 15px 15px rgba(6, 154, 173, 0.3); /* Optional: subtle glow effect */
+    outline: none; /* Remove outline */
+}
+
+.search-bar::placeholder {
+    color: #aaa; /* Lighter placeholder color for minimalism */
+    font-size: 22px; /* Adjust placeholder size */
+}
+
+/* Style for the search icon */
+.search-icon {
+    position: absolute;
+    right: 20px; /* Position it within the input */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    width: 40px; /* Adjust size as necessary */
+    height: 40px; /* Adjust size as necessary */
+}
+
+.search-button {
+    margin-left: 10px; /* Space between search bar and button */
+    height: 70px; /* Match the height of the search bar */
+    width: 100px;
+    border-radius: 25px; /* Rounded corners */
+    background-color: #32B8CA; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+/* Change button color on hover */
+.search-button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}

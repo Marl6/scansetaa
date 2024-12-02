@@ -1,0 +1,111 @@
+/* Style for the dashboard */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #32B8CA 0%, #94DAE3 10%, #D6F1F4 28%, #FFFFFF 100%);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Header styles with back button and medicine name */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between back button and medicine name */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button {
+    background-color: #32B8CA;
+    border: none;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 10vw;
+    height: 10vw;
+    max-width: 50px;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-icon {
+    width: 60%;
+    height: auto;
+}
+
+.back-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.medicine_name {
+    background-color: #FFFFFF;
+    border: 1px solid #32B8CA;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.medicine_name h2 {
+    font-size: 1.2rem;
+    color: #32B8CA;
+    margin: 0;
+}
+
+/* New style for the overall-container */
+.overall-container {
+    background-color: #FFFFFF; /* White background */
+    width: 90vw; /* Almost full width */
+    height: 75vh; /* Almost full height */
+    margin-top: 70px; /* Space from the top to move below the header */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.name-container {
+    background-color: #FFFFFF; /* White background */
+    width: 15vw; /* Almost full width */
+    height: 3vh; /* Almost full height */
+    margin-top: 70px; /* Space from the top to move below the header */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .back-button {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .overall-container {
+        width: 95vw;
+        height: 70vh;
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,147 @@
+/* src/css/uploadFile.css */
+.upload-file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to top, #32B8CA 0%, #94DAE3 10%, #D6F1F4 28%, #FFFFFF 100%);
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.home-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.upload-container {
+    text-align: center;
+}
+
+.upload-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px dashed #32B8CA;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+    background-color: rgba(50, 184, 202, 0.2);
+}
+
+.upload-icon {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.file-input {
+    display: none;
+}
+
+.upload-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #32B8CA;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #26a7b5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.upload-status {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.image-preview {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust to your container width */
+    max-width: 300px; /* Optional: set a maximum width for the preview */
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f9f9f9; /* Optional background for better visibility */
+  }
+  
+  .preview-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image scales without distortion */
+  }
+
+  .upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-preview {
+    position: relative; /* Ensure the button is positioned relative to this container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .preview-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .scan-image-button {
+    position: absolute; /* Position it relative to the image */
+    bottom: 10px; /* Position it near the bottom of the image */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Correct centering */
+    padding: 10px 20px;
+    background-color: #32b8ca;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 10; /* Ensure the button is above the image */
+  }
+  
+  .scan-image-button:hover {
+    background-color: #29a2b1;
+  }
+  
+  

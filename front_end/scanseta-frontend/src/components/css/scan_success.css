@@ -1,0 +1,187 @@
+.scan-success-dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative; /* Ensures positioning context for absolute children */
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    position: absolute;
+    top: 3vh;
+    left: 2vw; /* Keeps the logo on the left */
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 19vw;
+    height: auto;
+}
+
+.home-button {
+    position: absolute;
+    top: 3vh;
+    right: 2vw; /* Move home button to the right */
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    width: 15vw; /* Match the width of the logo container */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-icon {
+    width: 5vw;
+    height: auto;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 45vw;
+    width: 100vh;
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+    /* Margin of 5px on all sides */
+    padding: 3px;
+    /* Padding of 5px to keep elements within the container */
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the width and height */
+    overflow: hidden;
+    /* Prevent content from overflowing outside the container */
+}
+
+.instruction-text {
+    font-size: 1.5vw;
+    color: #32B8CA;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 0.07em;
+}
+
+.container1 {
+    width: 45vh;
+    height: 60vh;
+    max-width: 500px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container2 {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.scan-buttons {
+    display: flex;
+    gap: 1vw;
+    margin: 0;
+}
+
+.webcam {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+.progress {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 80%;
+    border-radius: 5px;
+    border-style: groove;
+    height: 15px;
+    background-color: #41ECA5;
+    margin-top: 1vw;
+}
+
+.progress-text {
+    margin-top: .5vw;
+    font-size: 1vw;
+}
+.button-icon {
+    width: 75%; /* Adjust as needed */
+    height: auto;
+}
+
+/* Update button styles to align icon and text */
+.scan-button-small,
+.scan-button-large {
+    border-style: none;
+    border-radius: 18px;
+    background-color: #32B8CA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    letter-spacing: 0.20em;
+    color: #ffffffea;
+}
+
+.scan-button-small {
+    width: 6vw;
+    height: 7vh;
+    position: relative;
+}
+
+.scan-button-large {
+    width: 15vw;
+    height: 7vh;
+    position: relative;
+}
+
+.scan-button-large h2 {
+    margin: 0;
+    font-size: 1.2em; /* Adjust size as needed */
+    font-weight: semi-bold;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .scan-button-small {
+        width: 20vw;
+        height: 10vh;
+    }
+
+    .scan-button-large {
+        width: 70vw;
+        height: 10vh;
+    }
+
+    .button-icon {
+        width: 50%; /* Adjust icon size on smaller screens */
+    }
+
+    .scan-button-large h2 {
+        font-size: 1.5em; /* Adjust font size on smaller screens */
+    }
+}
